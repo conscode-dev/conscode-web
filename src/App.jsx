@@ -10,12 +10,13 @@ import About from "./Sections/About";
 import Services from "./Sections/Services";
 import Portfolio from "./Sections/Portfolio";
 import Reviews from "./Sections/Reviews";
+import Packages from "./Sections/Packages";
 import FAQ from "./Sections/FAQ";
 import Contact from "./Sections/Contact";
 
 function App() {
   return (
-    <main className="min-h-screen bg-[#09032A] relative">
+    <main className="min-h-screen relative text-[#e8f0ea]">
       <Router>
         <CustomCursor />
         <Navbar />
@@ -43,6 +44,10 @@ function App() {
 
                 <section id="reviews">
                   <Reviews />
+                </section>
+
+                <section id="packages">
+                  <Packages />
                 </section>
 
                 <section id="faq">
