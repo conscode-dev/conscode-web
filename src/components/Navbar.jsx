@@ -14,6 +14,7 @@ const Navbar = () => {
         "services",
         "portfolio",
         "reviews",
+        "packages",
         "faq",
         "contact",
       ];
@@ -56,28 +57,26 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full text-white py-3 z-50 transition-all duration-500 bg-transparent ${
+      className={`fixed w-full py-3 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/20 backdrop-blur-md border-b border-white/10 shadow-lg shadow-black/25"
+          ? "bg-[#111816]/92 backdrop-blur-md border-b border-[#33423c] shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center">
-          {/* Logo & Brand - Simple hover effect */}
-          <div className="flex items-center gap-3">
+        <div className="flex justify-between items-center rounded-full border border-[#33423c] bg-[#1a2320]/92 px-4 py-2 shadow-sm">
+          <div className="flex items-center gap-2">
             <img
               src={Logo}
               alt="ConsCode Logo"
-              className="w-10 h-10"
+              className="h-12 w-auto object-contain"
             />
-            <div className="text-xl font-bold">
-              <span className="text-white">Cons</span>
-              <span className="text-blue-400">Code</span>
+            <div className="text-lg font-bold tracking-tight">
+              <span className="text-[#e8f0ea]">Cons</span>
+              <span className="text-[#35624a]">Code</span>
             </div>
           </div>
 
-          {/* Desktop Menu - Simple color change only */}
           <div className="hidden lg:flex text-md space-x-4">
             {[
               { id: "home", label: "Home" },
@@ -85,16 +84,17 @@ const Navbar = () => {
               { id: "services", label: "Layanan" },
               { id: "portfolio", label: "Portofolio" },
               { id: "reviews", label: "Testimoni" },
+              { id: "packages", label: "Paket" },
               { id: "faq", label: "FAQ" },
               { id: "contact", label: "Kontak" },
             ].map(({ id, label }) => (
               <button
                 key={id}
                 onClick={() => scrollToSection(id)}
-                className={`px-3 py-2 font-medium transition-colors duration-200 ${
+                className={`px-3 py-2 rounded-full font-medium transition-all duration-200 ${
                   activeSection === id
-                    ? "text-blue-400"
-                    : "text-white hover:text-blue-300"
+                    ? "bg-[#2a3733] text-[#9bcab2]"
+                    : "text-[#c7d6cf] hover:text-[#9bcab2] hover:bg-[#25312d]"
                 }`}
               >
                 {label}
@@ -102,9 +102,8 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile menu button - Simple */}
           <button
-            className="lg:hidden p-2 hover:text-blue-300 transition-colors duration-200"
+            className="lg:hidden p-2 text-[#9bcab2] hover:bg-[#2a3733] rounded-full transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -116,9 +115,8 @@ const Navbar = () => {
           </button>
         </div>
 
-        {/* Mobile Menu - Simple */}
         <div
-          className={`lg:hidden absolute left-4 right-4 top-full mt-2 rounded-lg bg-violet-950 backdrop-blur-md border border-white/10 transition-all duration-300 ${
+          className={`lg:hidden absolute left-4 right-4 top-full mt-2 rounded-2xl bg-[#1a2320] backdrop-blur-md border border-[#33423c] shadow-lg transition-all duration-300 ${
             isMenuOpen
               ? "opacity-100 translate-y-0 pointer-events-auto"
               : "opacity-0 -translate-y-2 pointer-events-none"
@@ -131,6 +129,7 @@ const Navbar = () => {
               { id: "services", label: "Layanan" },
               { id: "portfolio", label: "Portofolio" },
               { id: "reviews", label: "Testimoni" },
+              { id: "packages", label: "Paket" },
               { id: "faq", label: "FAQ" },
               { id: "contact", label: "Kontak" },
             ].map(({ id, label }) => (
@@ -139,8 +138,8 @@ const Navbar = () => {
                 onClick={() => scrollToSection(id)}
                 className={`text-left px-4 py-3 font-medium transition-colors duration-200 ${
                   activeSection === id
-                    ? "text-blue-400 bg-blue-800"
-                    : "text-white hover:text-blue-300 hover:bg-white/5"
+                    ? "text-[#9ecfb5] bg-[#2a3733]"
+                    : "text-[#c7d6cf] hover:text-[#9ecfb5] hover:bg-[#25312d]"
                 }`}
               >
                 {label}
