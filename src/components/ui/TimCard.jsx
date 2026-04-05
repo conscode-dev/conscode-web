@@ -10,7 +10,8 @@ const TeamCard = ({ photo, name, role }) => {
         lg:h-[28rem]
         overflow-hidden
         rounded-2xl
-        shadow-lg
+        border border-[#33423c]
+        shadow-sm
         group
       "
     >
@@ -28,8 +29,7 @@ const TeamCard = ({ photo, name, role }) => {
         "
       />
 
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#1f2a1f]/80 via-[#1f2a1f]/25 to-transparent" />
 
       {/* Text Content */}
       <div className="absolute bottom-0 p-5 text-white">
