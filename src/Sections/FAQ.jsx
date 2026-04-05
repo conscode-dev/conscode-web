@@ -52,57 +52,42 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#09032A] via-[#0f0544] to-[#1a0b5e] relative overflow-hidden">
-      {/* Background Elements */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-1/4 left-10 w-64 h-64 bg-blue-500 rounded-full mix-blend-multiply animate-float"></div>
-        <div className="absolute bottom-1/4 right-10 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply animate-float-delayed"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-cyan-500 rounded-full mix-blend-multiply animate-float-slow"></div>
-      </div>
-
-      <div className="container mx-auto px-4 relative z-10">
-        {/* Header */}
+    <section id="faq" className="section-shell py-20">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
         <AnimatedSection animation="slide-in-bottom">
           <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/20 border border-blue-500/30 rounded-full text-blue-300 text-sm font-medium mb-6">
-              Frequently Asked Questions
-              <i class="fa-solid fa-question"></i>
-            </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              <span className="text-white">Got </span>
-              <span className="gradient-text">Questions?</span>
-            </h2>
-            <p className="text-gray-300 text-lg max-w-2xl mx-auto leading-relaxed">
+            <span className="pill">FAQ</span>
+            <h2 className="section-title mt-5">Pertanyaan yang sering ditanyakan</h2>
+            <p className="section-subtitle text-lg mx-auto mt-4 leading-relaxed">
               Temukan jawaban untuk pertanyaan yang sering diajukan tentang
               layanan dan proses kerja ConsCode
             </p>
           </div>
         </AnimatedSection>
 
-        {/* FAQ Items */}
         <AnimatedSection animation="slide-in-bottom">
           <div className="max-w-4xl mx-auto">
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <div
                   key={index}
-                  className="glass-effect rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-500/10"
+                  className="soft-card overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-8 py-6 text-left flex justify-between items-center hover:bg-white/5 transition-colors duration-300"
+                    className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-[#202925] transition-colors duration-300"
                   >
-                    <h3 className="text-lg font-semibold text-white pr-8">
+                    <h3 className="text-lg font-semibold text-[#e8f0ea] pr-8">
                       {faq.question}
                     </h3>
                     <div
-                      className={`flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-blue-500/20 border border-blue-500/30 transition-all duration-300 ${openIndex === index
-                          ? "rotate-180 bg-blue-500/40 scale-110"
-                          : "hover:scale-110 hover:bg-blue-500/30"
+                      className={`flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-[#23302c] border border-[#c9d7ca] transition-all duration-300 ${openIndex === index
+                          ? "rotate-180 bg-[#31433d]"
+                          : "hover:scale-105"
                         }`}
                     >
                       <svg
-                        className="w-4 h-4 text-blue-300"
+                        className="w-4 h-4 text-[#8ec5aa]"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -123,9 +108,9 @@ const FAQ = () => {
                         : "max-h-0 opacity-0"
                       } overflow-hidden`}
                   >
-                    <div className="px-8 pb-6">
-                      <div className="w-full h-px bg-gradient-to-r from-transparent via-blue-500/30 to-transparent mb-6"></div>
-                      <p className="text-gray-300 leading-relaxed">
+                    <div className="px-6 pb-6">
+                      <div className="w-full h-px bg-[#33423c] mb-4"></div>
+                      <p className="text-[#a6bbb1] leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
@@ -134,13 +119,12 @@ const FAQ = () => {
               ))}
             </div>
 
-            {/* Call to Action */}
             <div className="mt-16 text-center">
-              <div className="glass-effect p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-white mb-4">
-                  Masih Ada Pertanyaan Lain? 🤔
+              <div className="soft-card p-8">
+                <h3 className="text-2xl font-bold text-[#e8f0ea] mb-4">
+                  Masih ada pertanyaan lain?
                 </h3>
-                <p className="text-gray-300 mb-6">
+                <p className="text-[#a6bbb1] mb-6">
                   Jangan ragu untuk menghubungi kami! Tim ConsCode siap membantu
                   menjawab pertanyaan dan kebutuhan proyek Anda.
                 </p>
@@ -149,51 +133,12 @@ const FAQ = () => {
                     href="https://wa.me/6285189339423?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20jasa%20pembuatan%20website%20ConsCode."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-8 py-3 bg-green-500/20 border border-green-500/30 text-green-300 font-semibold rounded-xl hover:bg-green-500 hover:text-white transition-all duration-300 hover:scale-105"
+                    className="btn-primary"
                   >
-                    <i class="fa-brands fa-whatsapp"></i> Whatsapp
+                    <i className="fa-brands fa-whatsapp"></i> Whatsapp
                   </a>
                 </div>
               </div>
-            </div>
-          </div>
-        </AnimatedSection>
-
-        {/* Statistics */}
-        <AnimatedSection animation="scale-up">
-          <div className="mt-20">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  number: "50+",
-                  label: "Pertanyaan Terjawab",
-                  icon: "❓",
-                  color: "text-blue-400",
-                },
-                {
-                  number: "100%",
-                  label: "Kepuasan Client",
-                  icon: "😊",
-                  color: "text-green-400",
-                },
-                {
-                  number: "24/7",
-                  label: "Support Available",
-                  icon: "🔧",
-                  color: "text-purple-400",
-                },
-              ].map((stat, index) => (
-                <div
-                  key={index}
-                  className="glass-effect p-6 rounded-2xl text-center hover:scale-105 transition-all duration-300"
-                >
-                  <div className="text-3xl mb-2">{stat.icon}</div>
-                  <div className={`text-3xl font-bold mb-2 ${stat.color}`}>
-                    {stat.number}
-                  </div>
-                  <div className="text-gray-300 text-sm">{stat.label}</div>
-                </div>
-              ))}
             </div>
           </div>
         </AnimatedSection>
