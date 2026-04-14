@@ -69,9 +69,9 @@ const Navbar = () => {
             <img
               src={Logo}
               alt="ConsCode Logo"
-              className="h-12 w-auto object-contain"
+              className="h-10 w-auto object-contain"
             />
-            <div className="text-lg font-bold tracking-tight">
+            <div className="text-base font-bold tracking-tight leading-none">
               <span className="text-[#e8f0ea]">Cons</span>
               <span className="text-[#35624a]">Code</span>
             </div>
