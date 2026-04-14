@@ -1,0 +1,1 @@
+Sistem Informasi Pelayanan Surat Desa berbasis web menggunakan framework CodeIgniter 4 dengan database MySQL. Aplikasi ini memungkinkan penduduk untuk mengajukan surat secara online, yang kemudian diverifikasi oleh Staff Desa dan disahkan oleh Lurah sebelum dapat diunduh dalam format PDF.

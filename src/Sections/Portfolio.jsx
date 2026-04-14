@@ -1,40 +1,42 @@
-import porto1 from "../assets/images/porto1.jpeg";
-import porto2 from "../assets/images/porto2.jpeg";
-import porto3 from "../assets/images/porto3.jpeg";
-import porto4 from "../assets/images/porto4.jpeg";
-import porto5 from "../assets/images/porto5.jpeg";
-import porto6 from "../assets/images/porto6.jpeg";
+import webgis from "../assets/Projects/WebGis/webgis.jpeg";
+import unibookstore from "../assets/Projects/unibookstore/unibookstore.jpeg";
+import suratDesa from "../assets/Projects/Sistem Informasi Pelayanan Surat Desa/sistem pelayanan surat desa.jpeg";
+import cloneWeb from "../assets/Projects/Clone Web Design/clone web.jpeg";
+import taniaPortfolio from "../assets/Projects/tania portfolio/tania portfolio.png";
 
 const projects = [
   {
-    title: "E-Commerce Fashion",
-    image: porto1,
-    description: "Toko online dengan alur checkout sederhana dan cepat.",
+    title: "WebGIS Gunungkidul",
+    image: webgis,
+    description:
+      "Sistem informasi geografis berbasis web untuk memetakan distribusi fasilitas pendidikan.",
+    liveUrl: "https://webgis-kelompok1.vercel.app/",
+    },
+  {
+    title: "UNIBOOKSTORE",
+    image: unibookstore,
+    description:
+      "Sistem manajemen toko buku berbasis web untuk inventaris, penerbit, dan pengadaan.",
   },
   {
-    title: "Landing Page Product",
-    image: porto2,
-    description: "Halaman promosi fokus konversi untuk campaign produk.",
+    title: "Sistem Surat Desa",
+    image: suratDesa,
+    description:
+      "Aplikasi pelayanan surat desa online dengan alur verifikasi dan unduh PDF.",
   },
   {
-    title: "Corporate Website",
-    image: porto3,
-    description: "Website profil perusahaan dengan struktur informasi yang jelas.",
+    title: "Clone Web Design",
+    image: cloneWeb,
+    description:
+      "Studi tampilan web dengan fokus pada layout yang bersih dan visual yang rapi.",
+    liveUrl: "https://one-page-ruddy.vercel.app/",
   },
   {
-    title: "Booking Platform",
-    image: porto4,
-    description: "Sistem reservasi dengan tampilan yang mudah digunakan pelanggan.",
-  },
-  {
-    title: "Education Website",
-    image: porto5,
-    description: "Portal edukasi dengan navigasi yang nyaman untuk siswa.",
-  },
-  {
-    title: "Dashboard Internal",
-    image: porto6,
-    description: "Dashboard operasional untuk memantau data bisnis harian.",
+    title: "Tania Portfolio",
+    image: taniaPortfolio,
+    description:
+      "Portofolio personal dengan presentasi yang modern dan mudah dipahami.",
+    liveUrl: "https://tania-portofolio.vercel.app/",
   },
 ];
 
@@ -64,6 +66,17 @@ const Portfolio = () => {
               <div className="p-5">
                 <h3 className="text-lg font-bold text-[#e8f0ea]">{project.title}</h3>
                 <p className="text-sm text-[#a6bbb1] mt-2">{project.description}</p>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#3f4d47] bg-[#23302c] px-4 py-2 text-sm font-semibold text-[#9bcab2] transition-all duration-300 hover:bg-[#2a3733] hover:text-[#e8f0ea]"
+                  >
+                    <i className="fa-solid fa-arrow-up-right-from-square"></i>
+                    Lihat Live
+                  </a>
+                )}
               </div>
             </article>
           ))}

@@ -1,0 +1,3 @@
+Sistem Informasi Geografis berbasis Web (WebGIS) ini dirancang untuk memetakan distribusi fasilitas pendidikan dasar dan menengah di seluruh wilayah Kabupaten Gunungkidul.
+
+Sistem ini memungkinkan pengguna untuk melihat lokasi sekolah secara interaktif, mendapatkan informasi koordinat, dan mengunduh data agregat per kecamatan dalam format PDF.

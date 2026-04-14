@@ -1,0 +1,1 @@
+UNIBOOKSTORE adalah sistem manajemen toko buku berbasis web lengkap yang dibangun dengan PHP Native dan MySQL. Sistem ini menyediakan fitur untuk mengelola buku, penerbit, pelacakan inventaris, dan perencanaan pengadaan.
