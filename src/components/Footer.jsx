@@ -8,13 +8,14 @@ const Footer = () => {
   // === DATA DINAMIS ===
   const footerSections = [
     {
-      title: "Quick Links",
+      title: "Social Media",
+      items: ["conscod3", "cons_dev", "conscod3", "conscode"],
+      icons: ["fa-instagram", "fa-x-twitter", "fa-tiktok", "fa-telegram"],
       links: [
-        { label: "Home", target: "home" },
-        { label: "About", target: "about" },
-        { label: "Services", target: "services" },
-        { label: "Portfolio", target: "portfolio" },
-        { label: "Contact", target: "contact" },
+        "https://instagram.com/conscod3",
+        "https://x.com/cons_dev",
+        "https://tiktok.com/@conscod3",
+        "https://t.me/conscode",
       ],
     },
     {
@@ -32,11 +33,6 @@ const Footer = () => {
       icons: ["fa-envelope", "fa-phone", "fa-location-dot"],
     },
   ];
-
-  const scrollToSection = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
 
   return (
     <footer className="section-shell text-[#e8f0ea]">
@@ -59,35 +55,30 @@ const Footer = () => {
                   {section.title}
                 </h4>
 
-                {section.links && (
-                  <ul className="space-y-2">
-                    {section.links.map((link, idx) => (
-                      <li key={idx}>
-                        <button
-                          onClick={() => scrollToSection(link.target)}
-                          className="text-[#a6bbb1] hover:text-[#8ec5aa] transition-colors text-sm flex items-center"
-                        >
-                          <i className="fa-solid fa-angle-right mr-2 text-xs"></i>
-                          {link.label}
-                        </button>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-
                 {section.items && (
                   <ul className="space-y-2">
                     {section.items.map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="text-[#a6bbb1] text-sm flex items-center gap-2"
-                      >
-                        {section.icons && section.icons[idx] && (
-                          <i
-                            className={`fa-solid ${section.icons[idx]} text-[#a6bbb1]`}
-                          ></i>
+                      <li key={idx}>
+                        {section.links && section.links[idx] ? (
+                          <a
+                            href={section.links[idx]}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#a6bbb1] hover:text-[#8ec5aa] transition-colors text-sm flex items-center gap-2"
+                          >
+                            {section.icons && section.icons[idx] && (
+                              <i className={`fa-brands ${section.icons[idx]} text-[#a6bbb1]`}></i>
+                            )}
+                            {item}
+                          </a>
+                        ) : (
+                          <span className="text-[#a6bbb1] text-sm flex items-center gap-2">
+                            {section.icons && section.icons[idx] && (
+                              <i className={`fa-solid ${section.icons[idx]} text-[#a6bbb1]`}></i>
+                            )}
+                            {item}
+                          </span>
                         )}
-                        {item}
                       </li>
                     ))}
                   </ul>
