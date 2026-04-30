@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/jpeg" href="/ConsCode.jpeg" />
@@ -13,7 +13,71 @@
     />
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ConsCode</title>
+    <meta
+      name="description"
+      content="ConsCode adalah tim freelance web developer yang membuat website modern, cepat, responsif, dan siap bantu bisnis tampil profesional di internet."
+    />
+    <meta
+      name="keywords"
+      content="ConsCode, jasa pembuatan website, web developer Surabaya, landing page, company profile, e-commerce, website responsif, website profesional"
+    />
+    <meta name="author" content="ConsCode" />
+    <meta name="theme-color" content="#0f1412" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:title" content="ConsCode | Jasa Pembuatan Website Profesional" />
+    <meta
+      property="og:description"
+      content="Website modern, cepat, dan responsif untuk landing page, company profile, hingga e-commerce bersama ConsCode."
+    />
+    <meta property="og:image" content="/ConsCode.jpeg" />
+    <meta property="og:image:alt" content="Logo ConsCode" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ConsCode | Jasa Pembuatan Website Profesional" />
+    <meta
+      name="twitter:description"
+      content="Website modern, cepat, dan responsif untuk landing page, company profile, hingga e-commerce bersama ConsCode."
+    />
+    <meta name="twitter:image" content="/ConsCode.jpeg" />
+
+    <script>
+      (function () {
+        var origin = window.location.origin;
+        var canonical = document.querySelector('link[rel="canonical"]');
+        if (!canonical) {
+          canonical = document.createElement("link");
+          canonical.rel = "canonical";
+          document.head.appendChild(canonical);
+        }
+        if (canonical) {
+          canonical.href = origin + "/";
+        }
+
+        var schema = document.createElement("script");
+        schema.type = "application/ld+json";
+        schema.text = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "ConsCode",
+          url: origin + "/",
+          logo: origin + "/ConsCode.jpeg",
+          description:
+            "Tim freelance web developer yang membuat website modern, cepat, responsif, dan fokus pada hasil bisnis.",
+          sameAs: [
+            "https://instagram.com/conscod3",
+            "https://x.com/cons_dev",
+            "https://tiktok.com/@conscod3",
+            "https://t.me/conscode",
+          ],
+        });
+        document.head.appendChild(schema);
+      })();
+    </script>
+
+    <title>ConsCode | Jasa Pembuatan Website Profesional</title>
   </head>
   <body>
     <div id="root"></div>
