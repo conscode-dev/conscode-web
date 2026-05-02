@@ -9,11 +9,11 @@ const Footer = () => {
   const footerSections = [
     {
       title: "Social Media",
-      items: ["conscod3", "cons_dev", "conscod3", "conscode"],
+      items: ["conscod3", "conscod33", "conscod3", "conscode"],
       icons: ["fa-instagram", "fa-x-twitter", "fa-tiktok", "fa-telegram"],
       links: [
         "https://instagram.com/conscod3",
-        "https://x.com/cons_dev",
+        "https://x.com/conscod33",
         "https://tiktok.com/@conscod3",
         "https://t.me/conscode",
       ],
