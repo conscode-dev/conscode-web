@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0f1412;
-  --surface: #1a2320;
-  --surface-soft: #24302c;
-  --text: #e8f0ea;
-  --muted: #a6bbb1;
-  --primary: #2f5d48;
-  --primary-strong: #234637;
-  --accent: #517fbf;
-  --line: #33423c;
+  --bg: #0f2854;
+  --surface: #1c4d8d;
+  --surface-soft: #4988c4;
+  --text: #f7fbff;
+  --muted: #d7edf4;
+  --primary: #4988c4;
+  --primary-strong: #4988c4;
+  --accent: #4988c4;
+  --line: #4988c4;
 }
 
 html {
@@ -22,9 +22,9 @@ html {
 
 body {
   background:
-    radial-gradient(circle at 12% 18%, rgba(81, 127, 191, 0.2) 0, transparent 28%),
-    radial-gradient(circle at 88% 12%, rgba(47, 93, 72, 0.22) 0, transparent 24%),
-    linear-gradient(180deg, #18201d 0%, var(--bg) 46%, #0b0f0e 100%);
+    radial-gradient(circle at 12% 18%, rgba(189, 232, 245, 0.24) 0, transparent 28%),
+    radial-gradient(circle at 88% 12%, rgba(73, 136, 196, 0.22) 0, transparent 24%),
+    linear-gradient(180deg, #1c4d8d 0%, var(--bg) 46%, #0f2854 100%);
   color: var(--text);
   font-family: "Plus Jakarta Sans", sans-serif;
   min-height: 100vh;
@@ -39,13 +39,13 @@ h4 {
 }
 
 ::selection {
-  background: #c7d7ef;
-  color: #17243a;
+  background: #f7fbff;
+  color: #0f2854;
 }
 
 .section-shell {
   position: relative;
-  background: linear-gradient(180deg, rgba(26, 35, 32, 0.95) 0%, rgba(15, 20, 18, 0.98) 100%);
+  background: linear-gradient(180deg, rgba(28, 77, 141, 0.92) 0%, rgba(15, 40, 84, 0.98) 100%);
 }
 
 .section-shell::before {
@@ -53,13 +53,13 @@ h4 {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background-image: radial-gradient(rgba(81, 127, 191, 0.12) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(189, 232, 245, 0.14) 1px, transparent 1px);
   background-size: 18px 18px;
   opacity: 0.3;
 }
 
 .soft-card {
-  background: rgba(26, 35, 32, 0.9);
+  background: rgba(11, 33, 69, 0.78);
   border: 1px solid var(--line);
   border-radius: 20px;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.3);
@@ -82,9 +82,9 @@ h4 {
   gap: 0.5rem;
   padding: 0.45rem 1rem;
   border-radius: 999px;
-  border: 1px solid #3f4d47;
-  background: #1f2a26;
-  color: #9bcab2;
+  border: 1px solid #4988c4;
+  background: #1c4d8d;
+  color: #bde8f5;
   font-size: 0.8rem;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -98,14 +98,15 @@ h4 {
   gap: 0.45rem;
   border-radius: 999px;
   padding: 0.8rem 1.5rem;
-  background: linear-gradient(135deg, var(--primary) 0%, #4a7b93 100%);
-  color: #f7f7f2;
+  background: linear-gradient(135deg, var(--primary) 0%, #4988c4 100%);
+  color: #0f2854;
   font-weight: 700;
   transition: all 0.25s ease;
 }
 
 .btn-primary:hover {
-  background: linear-gradient(135deg, var(--primary-strong) 0%, #356072 100%);
+  background: linear-gradient(135deg, var(--primary-strong) 0%, #0f2854 100%);
+  color: #f7fbff;
   transform: translateY(-2px);
 }
 
@@ -116,19 +117,19 @@ h4 {
   gap: 0.45rem;
   border-radius: 999px;
   padding: 0.78rem 1.5rem;
-  border: 1px solid #52635c;
-  color: #d7e6de;
+  border: 1px solid #4988c4;
+  color: #f7fbff;
   font-weight: 700;
   transition: all 0.25s ease;
 }
 
 .btn-outline:hover {
-  background: #2b3934;
+  background: #1c4d8d;
   transform: translateY(-2px);
 }
 
 .gradient-text {
-  background: linear-gradient(120deg, #2c5a48 0%, #5e86c9 100%);
+  background: linear-gradient(120deg, #4988c4 0%, #f7fbff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -143,7 +144,7 @@ h4 {
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
-  border: 2px solid rgba(44, 90, 72, 0.7);
+  border: 2px solid rgba(189, 232, 245, 0.68);
   transition: transform 0.15s ease;
 }
 

@@ -10,7 +10,7 @@ const TeamCard = ({ photo, name, role }) => {
         lg:h-[28rem]
         overflow-hidden
         rounded-2xl
-        border border-[#33423c]
+        border border-[#4988c4]
         shadow-sm
         group
       "
@@ -19,6 +19,8 @@ const TeamCard = ({ photo, name, role }) => {
       <img
         src={photo}
         alt={name}
+        loading="lazy"
+        decoding="async"
         className="
           w-full
           h-full
@@ -29,7 +31,7 @@ const TeamCard = ({ photo, name, role }) => {
         "
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#1f2a1f]/80 via-[#1f2a1f]/25 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0f2854]/80 via-[#0f2854]/25 to-transparent" />
 
       {/* Text Content */}
       <div className="absolute bottom-0 p-5 text-white">

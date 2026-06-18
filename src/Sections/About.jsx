@@ -51,7 +51,7 @@ const teamData = [
 
 const About = () => {
   return (
-    <section id="about" className="section-shell py-20">
+    <section className="section-shell py-20">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <AnimatedSection animation="slide-in-bottom" className="text-center mb-14">
           <span className="pill">Tentang Kami</span>
@@ -66,16 +66,16 @@ const About = () => {
 
         <div className="grid lg:grid-cols-2 gap-10 items-start mb-16">
           <AnimatedSection animation="slide-in-left" className="soft-card p-8">
-            <h3 className="text-2xl font-bold text-[#e8f0ea] mb-4">Kenapa memilih ConsCode?</h3>
-            <p className="text-[#a6bbb1] mb-6 leading-relaxed">
+            <h3 className="text-2xl font-bold text-[#f7fbff] mb-4">Kenapa memilih ConsCode?</h3>
+            <p className="text-[#d7edf4] mb-6 leading-relaxed">
               Kami tidak hanya membuat website yang terlihat bagus, tetapi juga
               memastikan tiap halaman punya tujuan bisnis yang jelas.
             </p>
             <div className="space-y-4">
               {features.map((feature) => (
-                <div key={feature.title} className="rounded-xl border border-[#33423c] bg-[#202925] p-4">
-                  <h4 className="font-semibold text-[#8ec5aa]">{feature.title}</h4>
-                  <p className="text-sm text-[#9fb2aa] mt-1">{feature.desc}</p>
+                <div key={feature.title} className="rounded-xl border border-[#4988c4] bg-[#0b2145] p-4">
+                  <h4 className="font-semibold text-[#bde8f5]">{feature.title}</h4>
+                  <p className="text-sm text-[#bde8f5] mt-1">{feature.desc}</p>
                 </div>
               ))}
             </div>
@@ -89,16 +89,16 @@ const About = () => {
               { value: "24/7", label: "Support Tim" },
             ].map((stat) => (
               <div key={stat.label} className="soft-card p-6 text-center">
-                <p className="text-3xl font-bold text-[#8ec5aa]">{stat.value}</p>
-                <p className="text-sm text-[#9fb2aa] mt-1">{stat.label}</p>
+                <p className="text-3xl font-bold text-[#bde8f5]">{stat.value}</p>
+                <p className="text-sm text-[#bde8f5] mt-1">{stat.label}</p>
               </div>
             ))}
           </AnimatedSection>
         </div>
 
         <AnimatedSection animation="scale-up" className="text-center mb-10">
-          <h3 className="text-2xl font-bold text-[#e8f0ea]">Tim Profesional</h3>
-          <p className="text-[#a6bbb1] mt-2">Orang-orang di balik website yang Anda banggakan.</p>
+          <h3 className="text-2xl font-bold text-[#f7fbff]">Tim Profesional</h3>
+          <p className="text-[#d7edf4] mt-2">Orang-orang di balik website yang Anda banggakan.</p>
         </AnimatedSection>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 justify-items-center">

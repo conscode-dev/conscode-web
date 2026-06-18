@@ -18,10 +18,10 @@ export default function ImageMarquee() {
   return (
     <div className="relative w-full overflow-hidden mt-10">
       {/* Gradient fade kiri */}
-      <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-[#09032A]/20 to-transparent z-20" />
+      <div className="pointer-events-none absolute left-0 top-0 h-full w-16 bg-gradient-to-r from-[#0f2854]/20 to-transparent z-20" />
 
       {/* Gradient fade kanan */}
-      <div className="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-[#09032A]/20 to-transparent z-20" />
+      <div className="pointer-events-none absolute right-0 top-0 h-full w-16 bg-gradient-to-l from-[#0f2854]/20 to-transparent z-20" />
 
       <div className="relative w-full overflow-hidden">
         <div className="flex items-center gap-2 animate-marquee whitespace-nowrap">
@@ -34,6 +34,8 @@ export default function ImageMarquee() {
               <img
                 src={item.src}
                 alt={`img-${i}`}
+                loading="lazy"
+                decoding="async"
                 className="w-auto h-44 object-cover drop-shadow-md transition duration-700 group-hover:scale-105"
               />
 

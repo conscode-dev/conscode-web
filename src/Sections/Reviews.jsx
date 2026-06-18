@@ -36,7 +36,7 @@ const Reviews = () => {
   }, []);
 
   return (
-    <section id="reviews" className="section-shell py-20">
+    <section className="section-shell py-20">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
           <span className="pill">Testimoni</span>
@@ -53,15 +53,21 @@ const Reviews = () => {
           >
             {reviews.map((review) => (
               <div key={review.name} className="w-full flex-none px-0">
-                <div className="rounded-2xl border border-[#33423c] bg-[#1a2320] p-6 md:p-8 shadow-sm h-full">
+                <div className="rounded-2xl border border-[#4988c4] bg-[#1c4d8d] p-6 md:p-8 shadow-sm h-full">
                   <div className="flex items-center gap-4 mb-5">
-                    <img src={review.image} alt={review.name} className="w-14 h-14 rounded-full object-cover ring-2 ring-[#2a3733]" />
+                    <img
+                      src={review.image}
+                      alt={review.name}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-14 h-14 rounded-full object-cover ring-2 ring-[#4988c4]"
+                    />
                     <div>
-                      <h3 className="text-lg font-semibold text-[#e8f0ea]">{review.name}</h3>
-                      <p className="text-sm text-[#9fb2aa]">{review.role}</p>
+                      <h3 className="text-lg font-semibold text-[#f7fbff]">{review.name}</h3>
+                      <p className="text-sm text-[#bde8f5]">{review.role}</p>
                     </div>
                   </div>
-                  <p className="text-[#b7c9c1] leading-relaxed text-[1.05rem] max-w-3xl">
+                  <p className="text-[#f7fbff] leading-relaxed text-[1.05rem] max-w-3xl">
                     “{review.text}”
                   </p>
                 </div>
@@ -74,7 +80,7 @@ const Reviews = () => {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`h-2.5 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#517fbf]" : "w-2.5 bg-[#42524c] hover:bg-[#5b7068]"}`}
+                className={`h-2.5 rounded-full transition-all duration-300 ${currentSlide === index ? "w-8 bg-[#4988c4]" : "w-2.5 bg-[#4988c4] hover:bg-[#4988c4]"}`}
                 aria-label={`Pindah ke testimoni ${index + 1}`}
               />
             ))}

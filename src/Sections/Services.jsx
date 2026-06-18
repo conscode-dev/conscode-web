@@ -30,7 +30,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section id="services" className="section-shell py-20">
+    <section className="section-shell py-20">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <AnimatedSection animation="slide-in-bottom" className="text-center mb-14">
           <span className="pill">Layanan</span>
@@ -50,13 +50,13 @@ const Services = () => {
               animation={index % 2 === 0 ? "slide-in-left" : "slide-in-right"}
               className="soft-card p-7"
             >
-              <h3 className="text-2xl font-bold text-[#e8f0ea] mb-3">{service.title}</h3>
-              <p className="text-[#a6bbb1] mb-5 leading-relaxed">{service.description}</p>
+              <h3 className="text-2xl font-bold text-[#f7fbff] mb-3">{service.title}</h3>
+              <p className="text-[#d7edf4] mb-5 leading-relaxed">{service.description}</p>
               <div className="flex flex-wrap gap-2">
                 {service.features.map((feature) => (
                   <span
                     key={feature}
-                    className="rounded-full border border-[#c9d7ca] bg-[#23302c] px-3 py-1 text-sm text-[#8ec5aa]"
+                    className="rounded-full border border-[#4988c4] bg-[#1c4d8d] px-3 py-1 text-sm text-[#bde8f5]"
                   >
                     {feature}
                   </span>
@@ -67,8 +67,8 @@ const Services = () => {
         </div>
 
         <AnimatedSection animation="scale-up" className="mt-14 soft-card p-8 text-center">
-          <h3 className="text-2xl font-bold text-[#e8f0ea]">Tech Stack yang Kami Gunakan</h3>
-          <p className="text-[#a6bbb1] mt-2">Teknologi modern untuk hasil website yang stabil dan mudah dikembangkan.</p>
+          <h3 className="text-2xl font-bold text-[#f7fbff]">Tech Stack yang Kami Gunakan</h3>
+          <p className="text-[#d7edf4] mt-2">Teknologi modern untuk hasil website yang stabil dan mudah dikembangkan.</p>
           <MarqueeIcon />
         </AnimatedSection>
       </div>

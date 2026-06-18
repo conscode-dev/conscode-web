@@ -42,7 +42,7 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className="section-shell py-20">
+    <section className="section-shell py-20">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
           <span className="pill">Portofolio</span>
@@ -60,18 +60,20 @@ const Portfolio = () => {
                 <img
                   src={project.image}
                   alt={project.title}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
               <div className="p-5">
-                <h3 className="text-lg font-bold text-[#e8f0ea]">{project.title}</h3>
-                <p className="text-sm text-[#a6bbb1] mt-2">{project.description}</p>
+                <h3 className="text-lg font-bold text-[#f7fbff]">{project.title}</h3>
+                <p className="text-sm text-[#d7edf4] mt-2">{project.description}</p>
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#3f4d47] bg-[#23302c] px-4 py-2 text-sm font-semibold text-[#9bcab2] transition-all duration-300 hover:bg-[#2a3733] hover:text-[#e8f0ea]"
+                    className="mt-4 inline-flex items-center gap-2 rounded-full border border-[#4988c4] bg-[#1c4d8d] px-4 py-2 text-sm font-semibold text-[#bde8f5] transition-all duration-300 hover:bg-[#4988c4] hover:text-[#0f2854]"
                   >
                     <i className="fa-solid fa-arrow-up-right-from-square"></i>
                     Lihat Live

@@ -80,7 +80,7 @@ const packages = [
 
 const Packages = () => {
   return (
-    <section id="packages" className="section-shell py-20">
+    <section className="section-shell py-20">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <AnimatedSection animation="slide-in-bottom" className="text-center mb-16">
           <span className="pill">Paket & Harga</span>
@@ -107,7 +107,7 @@ const Packages = () => {
             >
               {pkg.highlight && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-[#517fbf] text-[#e8f0ea] px-4 py-1 rounded-full text-sm font-bold">
+                  <span className="bg-[#4988c4] text-[#0f2854] px-4 py-1 rounded-full text-sm font-bold">
                     RECOMMENDED
                   </span>
                 </div>
@@ -115,31 +115,31 @@ const Packages = () => {
 
               <div
                 className={`soft-card p-8 h-full flex flex-col ${
-                  pkg.highlight ? "border-2 border-[#517fbf]" : ""
+                  pkg.highlight ? "border-2 border-[#4988c4]" : ""
                 }`}
               >
-                <h3 className="text-2xl font-bold text-[#e8f0ea] mb-2">
+                <h3 className="text-2xl font-bold text-[#f7fbff] mb-2">
                   {pkg.name}
                 </h3>
                 <div className="mb-4">
-                  <p className="text-3xl font-bold text-[#8ec5aa]">{pkg.price}</p>
-                  <p className="text-sm text-[#a6bbb1]">One-time payment</p>
+                  <p className="text-3xl font-bold text-[#bde8f5]">{pkg.price}</p>
+                  <p className="text-sm text-[#d7edf4]">One-time payment</p>
                 </div>
 
-                <p className="text-[#a6bbb1] mb-6 leading-relaxed">
+                <p className="text-[#d7edf4] mb-6 leading-relaxed">
                   {pkg.description}
                 </p>
 
                 {/* Features List */}
                 <div className="mb-8 flex-grow">
-                  <p className="text-sm font-semibold text-[#e8f0ea] mb-4 uppercase">
+                  <p className="text-sm font-semibold text-[#f7fbff] mb-4 uppercase">
                     Fitur Included
                   </p>
                   <ul className="space-y-3">
                     {pkg.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-3">
-                        <i className="fa-solid fa-check text-[#8ec5aa] mt-1 text-sm flex-shrink-0"></i>
-                        <span className="text-[#b7c9c1] text-sm">{feature}</span>
+                        <i className="fa-solid fa-check text-[#bde8f5] mt-1 text-sm flex-shrink-0"></i>
+                        <span className="text-[#f7fbff] text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -152,8 +152,8 @@ const Packages = () => {
                   rel="noopener noreferrer"
                   className={`w-full py-3 px-4 rounded-lg font-semibold text-center transition-all duration-300 ${
                     pkg.highlight
-                      ? "bg-[#517fbf] text-[#e8f0ea] hover:bg-[#5189d4] hover:shadow-lg hover:shadow-[#517fbf]/50"
-                      : "bg-[#2a3733] text-[#8ec5aa] border border-[#517fbf]/30 hover:bg-[#323d39] hover:border-[#517fbf]"
+                      ? "bg-[#4988c4] text-[#0f2854] hover:bg-[#bde8f5] hover:shadow-lg hover:shadow-[#4988c4]/50"
+                      : "bg-[#1c4d8d] text-[#bde8f5] border border-[#4988c4]/30 hover:bg-[#4988c4] hover:text-[#0f2854] hover:border-[#4988c4]"
                   }`}
                 >
                   <i className="fa-brands fa-whatsapp mr-2"></i>
@@ -166,44 +166,44 @@ const Packages = () => {
 
         {/* FAQ / Additional Info */}
         <AnimatedSection animation="slide-in-bottom">
-          <div className="soft-card p-8 md:p-10 bg-[#1a2320]">
+          <div className="soft-card p-8 md:p-10 bg-[#1c4d8d]">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-lg font-bold text-[#e8f0ea] mb-3">
+                <h4 className="text-lg font-bold text-[#f7fbff] mb-3">
                   Apa yang sudah included?
                 </h4>
-                <ul className="space-y-2 text-[#a6bbb1]">
+                <ul className="space-y-2 text-[#d7edf4]">
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#8ec5aa]"></i>
+                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
                     Design & development lengkap
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#8ec5aa]"></i>
+                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
                     Domain & hosting 1 tahun
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#8ec5aa]"></i>
+                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
                     Mobile responsive
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#8ec5aa]"></i>
+                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
                     Basic SEO optimization
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="text-lg font-bold text-[#e8f0ea] mb-3">
+                <h4 className="text-lg font-bold text-[#f7fbff] mb-3">
                   Ada pertanyaan?
                 </h4>
-                <p className="text-[#a6bbb1] mb-4">
+                <p className="text-[#d7edf4] mb-4">
                   Setiap paket bisa dikustomisasi sesuai kebutuhan spesifik Anda. Hubungi kami untuk konsultasi lebih detail.
                 </p>
                 <a
                   href="https://wa.me/6285189339423?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20tentang%20paket%20website%20ConsCode."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#8ec5aa] text-[#234637] font-semibold rounded-lg hover:bg-[#a3d5b9] transition-all"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#bde8f5] text-[#0f2854] font-semibold rounded-lg hover:bg-[#d7edf4] transition-all"
                 >
                   <i className="fa-solid fa-comments"></i>
                   Chat Dengan Tim

@@ -59,21 +59,24 @@ const Navbar = () => {
     <nav
       className={`fixed w-full py-3 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-[#111816]/92 backdrop-blur-md border-b border-[#33423c] shadow-sm"
+          ? "bg-[#0f2854]/92 backdrop-blur-md border-b border-[#4988c4] shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex justify-between items-center rounded-full border border-[#33423c] bg-[#1a2320]/92 px-4 py-2 shadow-sm">
+        <div className="flex justify-between items-center rounded-full border border-[#4988c4] bg-[#1c4d8d]/92 px-4 py-2 shadow-sm">
           <div className="flex items-center gap-2">
             <img
               src={Logo}
               alt="ConsCode Logo"
+              loading="eager"
+              decoding="async"
+              fetchPriority="high"
               className="h-10 w-auto object-contain"
             />
             <div className="text-base font-bold tracking-tight leading-none">
-              <span className="text-[#e8f0ea]">Cons</span>
-              <span className="text-[#35624a]">Code</span>
+              <span className="text-[#f7fbff]">Cons</span>
+              <span className="text-[#4988c4]">Code</span>
             </div>
           </div>
 
@@ -93,8 +96,8 @@ const Navbar = () => {
                 onClick={() => scrollToSection(id)}
                 className={`px-3 py-2 rounded-full font-medium transition-all duration-200 ${
                   activeSection === id
-                    ? "bg-[#2a3733] text-[#9bcab2]"
-                    : "text-[#c7d6cf] hover:text-[#9bcab2] hover:bg-[#25312d]"
+                    ? "bg-[#4988c4] text-[#0f2854]"
+                    : "text-[#f7fbff] hover:text-[#bde8f5] hover:bg-[#1c4d8d]"
                 }`}
               >
                 {label}
@@ -103,7 +106,7 @@ const Navbar = () => {
           </div>
 
           <button
-            className="lg:hidden p-2 text-[#9bcab2] hover:bg-[#2a3733] rounded-full transition-colors duration-200"
+            className="lg:hidden p-2 text-[#bde8f5] hover:bg-[#4988c4] hover:text-[#0f2854] rounded-full transition-colors duration-200"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -116,7 +119,7 @@ const Navbar = () => {
         </div>
 
         <div
-          className={`lg:hidden absolute left-4 right-4 top-full mt-2 rounded-2xl bg-[#1a2320] backdrop-blur-md border border-[#33423c] shadow-lg transition-all duration-300 ${
+          className={`lg:hidden absolute left-4 right-4 top-full mt-2 rounded-2xl bg-[#1c4d8d] backdrop-blur-md border border-[#4988c4] shadow-lg transition-all duration-300 ${
             isMenuOpen
               ? "opacity-100 translate-y-0 pointer-events-auto"
               : "opacity-0 -translate-y-2 pointer-events-none"
@@ -138,8 +141,8 @@ const Navbar = () => {
                 onClick={() => scrollToSection(id)}
                 className={`text-left px-4 py-3 font-medium transition-colors duration-200 ${
                   activeSection === id
-                    ? "text-[#9ecfb5] bg-[#2a3733]"
-                    : "text-[#c7d6cf] hover:text-[#9ecfb5] hover:bg-[#25312d]"
+                    ? "text-[#0f2854] bg-[#4988c4]"
+                    : "text-[#f7fbff] hover:text-[#bde8f5] hover:bg-[#1c4d8d]"
                 }`}
               >
                 {label}

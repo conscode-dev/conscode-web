@@ -35,23 +35,23 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="section-shell text-[#e8f0ea]">
+    <footer className="section-shell text-[#f7fbff]">
       <AnimatedSection animation="slide-in-bottom">
         <div className="container mx-auto px-4 py-16">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div>
               <h3 className="text-2xl font-bold mb-4">
-                <span className="text-[#e8f0ea]">Cons</span>
-                <span className="text-[#35624a]">Code</span>
+                <span className="text-[#f7fbff]">Cons</span>
+                <span className="text-[#4988c4]">Code</span>
               </h3>
-              <p className="text-[#a6bbb1] text-sm leading-relaxed">
+              <p className="text-[#d7edf4] text-sm leading-relaxed">
                 Website development dengan pendekatan clean design dan hasil yang terukur.
               </p>
             </div>
 
             {footerSections.map((section, index) => (
               <div key={index}>
-                <h4 className="text-lg font-semibold mb-4 text-[#e8f0ea]">
+                <h4 className="text-lg font-semibold mb-4 text-[#f7fbff]">
                   {section.title}
                 </h4>
 
@@ -64,17 +64,17 @@ const Footer = () => {
                             href={section.links[idx]}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#a6bbb1] hover:text-[#8ec5aa] transition-colors text-sm flex items-center gap-2"
+                            className="text-[#d7edf4] hover:text-[#bde8f5] transition-colors text-sm flex items-center gap-2"
                           >
                             {section.icons && section.icons[idx] && (
-                              <i className={`fa-brands ${section.icons[idx]} text-[#a6bbb1]`}></i>
+                              <i className={`fa-brands ${section.icons[idx]} text-[#d7edf4]`}></i>
                             )}
                             {item}
                           </a>
                         ) : (
-                          <span className="text-[#a6bbb1] text-sm flex items-center gap-2">
+                          <span className="text-[#d7edf4] text-sm flex items-center gap-2">
                             {section.icons && section.icons[idx] && (
-                              <i className={`fa-solid ${section.icons[idx]} text-[#a6bbb1]`}></i>
+                              <i className={`fa-solid ${section.icons[idx]} text-[#d7edf4]`}></i>
                             )}
                             {item}
                           </span>
@@ -87,14 +87,14 @@ const Footer = () => {
             ))}
           </div>
 
-          <div className="border-t border-[#33423c] pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p className="text-[#a6bbb1] text-sm">
+          <div className="border-t border-[#4988c4] pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <p className="text-[#d7edf4] text-sm">
               {new Date().getFullYear()} ConsCode. All rights reserved.
             </p>
 
             <button
               onClick={scrollToTop}
-              className="flex items-center gap-2 px-4 py-2 bg-[#23302c] hover:bg-[#31433d] text-[#8ec5aa] rounded-lg transition-colors text-sm"
+              className="flex items-center gap-2 px-4 py-2 bg-[#1c4d8d] hover:bg-[#4988c4] text-[#bde8f5] hover:text-[#0f2854] rounded-lg transition-colors text-sm"
             >
               <i className="fa-solid fa-arrow-up"></i> Back to Top
             </button>

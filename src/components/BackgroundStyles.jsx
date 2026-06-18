@@ -61,14 +61,14 @@ const BackgroundStyles = {
         </path>
         <defs>
           <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#3b82f6" stopOpacity="0"/>
-            <stop offset="50%" stopColor="#3b82f6" stopOpacity="0.4"/>
-            <stop offset="100%" stopColor="#3b82f6" stopOpacity="0"/>
+            <stop offset="0%" stopColor="#4988c4" stopOpacity="0"/>
+            <stop offset="50%" stopColor="#4988c4" stopOpacity="0.4"/>
+            <stop offset="100%" stopColor="#4988c4" stopOpacity="0"/>
           </linearGradient>
           <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#8b5cf6" stopOpacity="0"/>
-            <stop offset="50%" stopColor="#8b5cf6" stopOpacity="0.4"/>
-            <stop offset="100%" stopColor="#8b5cf6" stopOpacity="0"/>
+            <stop offset="0%" stopColor="#4988c4" stopOpacity="0"/>
+            <stop offset="50%" stopColor="#4988c4" stopOpacity="0.4"/>
+            <stop offset="100%" stopColor="#4988c4" stopOpacity="0"/>
           </linearGradient>
         </defs>
       </svg>
@@ -119,8 +119,8 @@ const BackgroundStyles = {
         <div className="w-full h-full" 
              style={{
                backgroundImage: `
-                 linear-gradient(0deg, transparent 24%, rgba(59, 130, 246, 0.3) 25%, rgba(59, 130, 246, 0.3) 26%, transparent 27%, transparent 74%, rgba(59, 130, 246, 0.3) 75%, rgba(59, 130, 246, 0.3) 76%, transparent 77%, transparent),
-                 linear-gradient(90deg, transparent 24%, rgba(139, 92, 246, 0.3) 25%, rgba(139, 92, 246, 0.3) 26%, transparent 27%, transparent 74%, rgba(139, 92, 246, 0.3) 75%, rgba(139, 92, 246, 0.3) 76%, transparent 77%, transparent)
+                 linear-gradient(0deg, transparent 24%, rgba(189, 232, 245, 0.24) 25%, rgba(189, 232, 245, 0.24) 26%, transparent 27%, transparent 74%, rgba(189, 232, 245, 0.24) 75%, rgba(189, 232, 245, 0.24) 76%, transparent 77%, transparent),
+                 linear-gradient(90deg, transparent 24%, rgba(73, 136, 196, 0.22) 25%, rgba(73, 136, 196, 0.22) 26%, transparent 27%, transparent 74%, rgba(73, 136, 196, 0.22) 75%, rgba(73, 136, 196, 0.22) 76%, transparent 77%, transparent)
                `,
                backgroundSize: '50px 50px'
              }}>
