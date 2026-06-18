@@ -1,22 +1,25 @@
+import { lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import CustomCursor from "./components/CustomCursor";
+import LazySection from "./components/LazySection";
 
 // pages/sections
 import Hero from "./Sections/Hero";
-import About from "./Sections/About";
-import Services from "./Sections/Services";
-import Portfolio from "./Sections/Portfolio";
-import Reviews from "./Sections/Reviews";
-import Packages from "./Sections/Packages";
-import FAQ from "./Sections/FAQ";
-import Contact from "./Sections/Contact";
+
+const About = lazy(() => import("./Sections/About"));
+const Services = lazy(() => import("./Sections/Services"));
+const Portfolio = lazy(() => import("./Sections/Portfolio"));
+const Reviews = lazy(() => import("./Sections/Reviews"));
+const Packages = lazy(() => import("./Sections/Packages"));
+const FAQ = lazy(() => import("./Sections/FAQ"));
+const Contact = lazy(() => import("./Sections/Contact"));
 
 function App() {
   return (
-    <main className="min-h-screen relative text-[#e8f0ea]">
+    <main className="min-h-screen relative text-[#f7fbff]">
       <Router>
         <CustomCursor />
         <Navbar />
@@ -30,33 +33,33 @@ function App() {
                   <Hero />
                 </section>
 
-                <section id="about">
+                <LazySection id="about" minHeight="56rem">
                   <About />
-                </section>
+                </LazySection>
 
-                <section id="services">
+                <LazySection id="services" minHeight="42rem">
                   <Services />
-                </section>
+                </LazySection>
 
-                <section id="portfolio">
+                <LazySection id="portfolio" minHeight="48rem">
                   <Portfolio />
-                </section>
+                </LazySection>
 
-                <section id="reviews">
+                <LazySection id="reviews" minHeight="34rem">
                   <Reviews />
-                </section>
+                </LazySection>
 
-                <section id="packages">
+                <LazySection id="packages" minHeight="58rem">
                   <Packages />
-                </section>
+                </LazySection>
 
-                <section id="faq">
+                <LazySection id="faq" minHeight="40rem">
                   <FAQ />
-                </section>
+                </LazySection>
 
-                <section id="contact">
+                <LazySection id="contact" minHeight="36rem">
                   <Contact />
-                </section>
+                </LazySection>
               </>
             }
           />
