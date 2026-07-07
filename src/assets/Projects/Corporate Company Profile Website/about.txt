@@ -1,0 +1,19 @@
+Corporate Company Profile Website
+
+About The Project
+This platform is an enterprise-scale corporate profile site that serves as a reputation center and digital business lead generator. The system combines powerful narrative writing techniques (Scrollytelling) and modern visuals (The Soul) with SEO-optimized web infrastructure, high loading speeds, and multi-layered security (The Engine), to convert casual visitors (investors, business partners, or clients) into action.
+
+Project Gallery (isi dengan gambar yang ada dalam folder)
+
+Technologies
+Next.js
+TypeScript
+Tailwind CSS
+Laravel
+MySQL
+
+Key Features
+Corporate Hero & Value Proposition
+Core Solutions & Services Module
+Credibility Hub (Portfolio & Testimonials)
+Governance & Career Center (Corporate Governance)

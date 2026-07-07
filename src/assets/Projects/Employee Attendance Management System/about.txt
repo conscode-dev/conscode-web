@@ -1,0 +1,19 @@
+About The Project
+This system is a web/mobile-based employee attendance management platform designed to replace manual processes with a high-performance, automated ecosystem. Prioritizing a clean user experience (The Soul) and a robust tracking engine (The Engine), this system ensures that all attendance data is recorded accurately, transparently, and anti-manipulation.
+
+Project Gallery (isi dengan gambar yang ada dalam folder)
+
+Technologies
+Next.js
+TypeScript
+Tailwind CSS
+Laravel
+MySQL
+
+Key Features
+Attendance Analytics Dashboard
+Employee & Division Data Management
+PDF & Excel Reports (Payroll-Ready)
+Roles & Permissions (Multi-Level Access)
+Real-Time Attendance Monitoring & Geolocation
+

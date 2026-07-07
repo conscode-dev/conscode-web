@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { ArrowRight, Menu, X } from "lucide-react";
 import Logo from "../../public/mt.png";
 
@@ -6,6 +7,8 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -43,7 +46,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId) => {
+  const scrollToSection = useCallback((sectionId) => {
+    if (location.pathname !== "/") {
+      navigate("/", { state: { scrollTo: sectionId } });
+      setIsMenuOpen(false);
+      return;
+    }
+
     const element = document.getElementById(sectionId);
     if (element) {
       const offset = 80; // height of navbar
@@ -54,7 +63,19 @@ const Navbar = () => {
       });
       setIsMenuOpen(false);
     }
-  };
+  }, [location.pathname, navigate]);
+
+  useEffect(() => {
+    const sectionId = location.state?.scrollTo;
+    if (!sectionId || location.pathname !== "/") return undefined;
+
+    const timeout = window.setTimeout(() => {
+      scrollToSection(sectionId);
+      navigate("/", { replace: true, state: {} });
+    }, 120);
+
+    return () => window.clearTimeout(timeout);
+  }, [location.pathname, location.state, navigate, scrollToSection]);
 
   return (
     <nav

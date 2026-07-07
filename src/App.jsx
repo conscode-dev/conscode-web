@@ -11,6 +11,7 @@ import Hero from "./Sections/Hero";
 const About = lazy(() => import("./Sections/About"));
 const Services = lazy(() => import("./Sections/Services"));
 const Portfolio = lazy(() => import("./Sections/Portfolio"));
+const ProjectDetail = lazy(() => import("./Sections/ProjectDetail"));
 const Reviews = lazy(() => import("./Sections/Reviews"));
 const Packages = lazy(() => import("./Sections/Packages"));
 const FAQ = lazy(() => import("./Sections/FAQ"));
@@ -61,6 +62,7 @@ function App() {
               </>
             }
           />
+          <Route path="/portfolio/:slug" element={<ProjectDetail />} />
         </Routes>
 
         <Footer />

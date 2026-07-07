@@ -1,0 +1,18 @@
+About The Project
+This platform is a modern digital literary blog dedicated exclusively to the publication, preservation, and learning of Cerkak (Cerita Cekak). This system transforms the way regional literature is enjoyed from conventional print media to an interactive digital ecosystem. This platform serves not only as a reading platform but also as an interactive cultural education medium for the younger generation through the integration of language aids and a community appreciation space.
+
+Project Gallery (ada dalam folder)
+
+Technologies
+Next.js
+TypeScript
+Tailwind CSS
+Laravel
+MySQL
+
+Key Features
+Home & Various Categories of Cerkak
+E-Reader & Audio Literary Modules
+Community Space (Comments & Appreciation)
+Digital Language Dictionary & Glossary
+Admin Page & Reader Engagement Analysis

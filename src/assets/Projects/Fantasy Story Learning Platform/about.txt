@@ -1,0 +1,19 @@
+About The Project
+This platform is a web-based learning system that transforms educational materials into a fantasy web comic series. Through a visual literacy approach, users not only consume stories as readers (Material & Dictionary) but are also encouraged to become story producers (Creative Space), while also testing their understanding through interactive challenges (Evaluation), with all performance monitored in real time by teachers through a ranking control center (Admin Page).
+
+Project Gallery (ada dalam folder)
+
+Technologies
+Next.js
+TypeScript
+Tailwind CSS
+Laravel
+MySQL
+
+Key Features
+Home & World Map Dashboard
+Material Module (Interactive Web Comic)
+Creative Space (Story Editor & Sandbox)
+Evaluation & Practice (RPG Multiple Choice Quizzes)
+Fantasy Dictionary (Lore/Term Encyclopedia)
+Admin Page & Real-time Ranking Analysis

@@ -1,0 +1,19 @@
+About The Project
+This platform is an interactive web-based educational game that adapts the concept of a virtual escape room for chemistry learning. The system is designed to be linear and rigorous to measure student understanding. Students cannot break into the room until they complete a pretest. Inside the room, they must solve various chemistry puzzles to obtain the key code to escape. This concludes with a posttest to measure their final academic achievement.
+
+Project Gallery (ada dalam folder)
+
+Technologies
+Next.js
+TypeScript
+Tailwind CSS
+Laravel
+MySQL
+
+Key Features
+Pretest Gateway (Entry Gate)
+Chemistry Puzzle Engine (Puzzle Room)
+Room Key Code System (Keycode Validator)
+Posttest Evaluation (Exit Gate)
+Admin Page & Teacher Analytics Dashboard
+
