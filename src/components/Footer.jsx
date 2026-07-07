@@ -24,6 +24,8 @@ const Footer = () => {
         "Website Development",
         "E-Commerce Solutions",
         "Web Applications",
+        "AI Automation",
+        "Data & AI Integration",
         "UI/UX Design",
       ],
     },
@@ -45,7 +47,8 @@ const Footer = () => {
                 <span className="text-[#2F7CF6]">Code</span>
               </h3>
               <p className="text-[#6F7F8F] text-sm leading-relaxed">
-                Website development dengan pendekatan clean design dan hasil yang terukur.
+                Web development dan AI automation dengan pendekatan clean
+                design, workflow rapi, dan hasil yang terukur.
               </p>
             </div>
 

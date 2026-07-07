@@ -15,7 +15,7 @@ const Hero = () => {
             className="space-y-7 stagger-child text-center lg:text-left items-center lg:items-start flex flex-col"
             threshold={0.1}
           >
-            <span className="pill">Solusi Website untuk Bisnis Modern</span>
+            <span className="pill">Web Development & AI Automation</span>
 
             <h1 className="max-w-2xl text-5xl md:text-6xl xl:text-[4rem] font-extrabold leading-[1.04] text-[#080B10]">
               Website by Strategy.{" "}
@@ -23,8 +23,8 @@ const Hero = () => {
             </h1>
 
             <p className="text-base md:text-lg text-[#6F7F8F] max-w-xl leading-relaxed">
-              ConsCode membangun website company profile, e-commerce, dan
-              aplikasi web yang rapi, cepat, serta siap membantu bisnis tumbuh
+              ConsCode membangun website, aplikasi web, dan solusi AI
+              automation yang rapi, cepat, serta siap membantu bisnis tumbuh
               lebih percaya diri.
             </p>
 

@@ -1,4 +1,11 @@
-import { LayoutTemplate, MonitorSmartphone, Settings2, ShoppingBag } from "lucide-react";
+import {
+  Bot,
+  Database,
+  LayoutTemplate,
+  MonitorSmartphone,
+  Settings2,
+  ShoppingBag,
+} from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
 import MarqueeIcon from "../components/ui/IconMarquee";
 
@@ -25,6 +32,20 @@ const services = [
     icon: MonitorSmartphone,
   },
   {
+    title: "AI Automation & Chatbot",
+    description:
+      "Otomatisasi workflow bisnis dengan chatbot, AI assistant, dan respons pintar.",
+    features: ["AI chatbot", "WhatsApp automation", "Lead qualification", "Knowledge base"],
+    icon: Bot,
+  },
+  {
+    title: "Data & AI Integration",
+    description:
+      "Integrasi AI ke aplikasi untuk analisis data, rekomendasi, dan workflow cerdas.",
+    features: ["AI API integration", "Data processing", "Recommendation", "Custom workflow"],
+    icon: Database,
+  },
+  {
     title: "Website Maintenance",
     description:
       "Perawatan berkala agar website tetap aman, stabil, dan performanya terjaga.",
@@ -44,7 +65,8 @@ const Services = () => {
           </h2>
           <p className="section-subtitle mx-auto mt-4 text-base md:text-lg">
             Setiap layanan dirancang agar bisnis Anda tampil profesional,
-            mudah dipercaya, dan siap bertumbuh.
+            mudah dipercaya, dan siap bertumbuh dengan bantuan teknologi web
+            serta AI.
           </p>
         </AnimatedSection>
 

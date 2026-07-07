@@ -8,7 +8,7 @@ const FAQ = () => {
     {
       question: "Apa saja layanan yang ditawarkan ConsCode?",
       answer:
-        "ConsCode menawarkan berbagai layanan pengembangan web seperti pembuatan website responsif, aplikasi web full-stack, e-commerce, landing pages, dan sistem manajemen konten. Kami juga menyediakan layanan UI/UX design dan maintenance website.",
+        "ConsCode menawarkan pengembangan website responsif, aplikasi web full-stack, e-commerce, UI/UX design, maintenance website, AI automation, chatbot, dan integrasi data berbasis AI.",
     },
     {
       question: "Berapa lama waktu yang dibutuhkan untuk menyelesaikan proyek?",
@@ -18,7 +18,7 @@ const FAQ = () => {
     {
       question: "Teknologi apa saja yang digunakan ConsCode?",
       answer:
-        "Kami menggunakan teknologi modern seperti React.js, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, Tailwind CSS, dan berbagai tools development terkini. Kami selalu mengikuti best practices dan teknologi terbaru di industri.",
+        "Kami menggunakan teknologi modern seperti React.js, Node.js, Laravel, MongoDB, PostgreSQL, Tailwind CSS, Python, OpenAI, LangChain, FastAPI, Pandas, dan vector database sesuai kebutuhan proyek.",
     },
     {
       question: "Apakah website yang dibuat mobile-friendly?",
