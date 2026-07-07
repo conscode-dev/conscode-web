@@ -2,14 +2,14 @@ import Img1 from "../../assets/images/marquee/1.jfif";
 import Img2 from "../../assets/images/marquee/2.jfif";
 import Img3 from "../../assets/images/marquee/1.jfif";
 import Img4 from "../../assets/images/marquee/2.jfif";
-import Img5 from "../../assets/images/marquee/1.jfif";
+import Img5 from "../../assets/images/marquee/hakiky.jpeg";
 
 const images = [
   { src: Img1, title: "Haqqul Amal jiddan", desc: "QA Engineer" },
   { src: Img2, title: "Iffo Elsande", desc: "AI Engineer" },
   { src: Img3, title: "Syahril Caesa Mahira", desc: "Frontend Engineer" },
   { src: Img4, title: "Choirul Ainul Ibad", desc: "Backend Engineer" },
-  { src: Img5, title: "Jahfal Azzuhri Subroto", desc: "UI/UX Designer" },
+  { src: Img5, title: "Khusai Hakiky", desc: "UI/UX Designer" },
 ];
 
 export default function ImageMarquee() {
