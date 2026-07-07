@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import CustomCursor from "./components/CustomCursor";
 import LazySection from "./components/LazySection";
 
 // pages/sections
@@ -19,9 +18,8 @@ const Contact = lazy(() => import("./Sections/Contact"));
 
 function App() {
   return (
-    <main className="min-h-screen relative text-[#f7fbff]">
+    <main className="min-h-screen relative text-[#080B10]">
       <Router>
-        <CustomCursor />
         <Navbar />
 
         <Routes>

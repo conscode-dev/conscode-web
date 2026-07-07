@@ -52,7 +52,7 @@ const FAQ = () => {
   };
 
   return (
-    <section className="section-shell py-20">
+    <section className="section-shell py-24">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <AnimatedSection animation="slide-in-bottom">
           <div className="text-center mb-16">
@@ -75,19 +75,19 @@ const FAQ = () => {
                 >
                   <button
                     onClick={() => toggleFAQ(index)}
-                    className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-[#0b2145] transition-colors duration-300"
+                    className="w-full px-6 py-5 text-left flex justify-between items-center hover:bg-[#F9FAFD] transition-colors duration-300"
                   >
-                    <h3 className="text-lg font-semibold text-[#f7fbff] pr-8">
+                    <h3 className="text-lg font-bold text-[#080B10] pr-8">
                       {faq.question}
                     </h3>
                     <div
-                      className={`flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-[#1c4d8d] border border-[#4988c4] transition-all duration-300 ${openIndex === index
-                          ? "rotate-180 bg-[#4988c4]"
+                      className={`flex-shrink-0 w-8 h-8 flex items-center justify-center rounded-full bg-[#EEF5FF] border border-[#DCE8FB] transition-all duration-300 ${openIndex === index
+                          ? "rotate-180 bg-[#2F7CF6]"
                           : "hover:scale-105"
                         }`}
                     >
                       <svg
-                        className="w-4 h-4 text-[#bde8f5]"
+                        className={`w-4 h-4 ${openIndex === index ? "text-white" : "text-[#2F7CF6]"}`}
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -109,8 +109,8 @@ const FAQ = () => {
                       } overflow-hidden`}
                   >
                     <div className="px-6 pb-6">
-                      <div className="w-full h-px bg-[#4988c4] mb-4"></div>
-                      <p className="text-[#d7edf4] leading-relaxed">
+                      <div className="w-full h-px bg-[#E7EDF5] mb-4"></div>
+                      <p className="text-[#6F7F8F] leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
@@ -121,10 +121,10 @@ const FAQ = () => {
 
             <div className="mt-16 text-center">
               <div className="soft-card p-8">
-                <h3 className="text-2xl font-bold text-[#f7fbff] mb-4">
+                <h3 className="text-2xl font-extrabold text-[#080B10] mb-4">
                   Masih ada pertanyaan lain?
                 </h3>
-                <p className="text-[#d7edf4] mb-6">
+                <p className="text-[#6F7F8F] mb-6">
                   Jangan ragu untuk menghubungi kami! Tim ConsCode siap membantu
                   menjawab pertanyaan dan kebutuhan proyek Anda.
                 </p>

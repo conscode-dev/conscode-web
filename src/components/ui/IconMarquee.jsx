@@ -42,14 +42,15 @@ export default function IconList() {
             className="
           flex flex-col items-center justify-center
           w-20 h-20 rounded-2xl
-          bg-[#0b2145] border border-[#4988c4]
+          bg-[#F9FAFD] border border-[#E7EDF5]
+          shadow-[0_12px_28px_rgba(56,67,89,0.06)]
           transition-all duration-300
           hover:-translate-y-1
         "
           >
             <div className="text-center space-y-1">
-              <div className="text-[#bde8f5] text-3xl">{item.icon}</div>
-              <h4 className="text-[#bde8f5] text-sm font-medium">{item.title}</h4>
+              <div className="text-[#2F7CF6] text-3xl">{item.icon}</div>
+              <h4 className="text-[#384359] text-sm font-semibold">{item.title}</h4>
             </div>
           </div>
         ))}

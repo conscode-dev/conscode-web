@@ -80,7 +80,7 @@ const packages = [
 
 const Packages = () => {
   return (
-    <section className="section-shell py-20">
+    <section className="section-shell py-24">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <AnimatedSection animation="slide-in-bottom" className="text-center mb-16">
           <span className="pill">Paket & Harga</span>
@@ -98,16 +98,16 @@ const Packages = () => {
               key={pkg.name}
               animation={
                 pkg.highlight
-                  ? "scale-up"
-                  : index === 0
-                  ? "slide-in-left"
-                  : "slide-in-right"
+                    ? "scale-up"
+                    : index === 0
+                    ? "slide-in-left"
+                    : "slide-in-right"
               }
               className={`relative ${pkg.highlight ? "md:scale-105" : ""}`}
             >
               {pkg.highlight && (
                 <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                  <span className="bg-[#4988c4] text-[#0f2854] px-4 py-1 rounded-full text-sm font-bold">
+                  <span className="bg-[#2F7CF6] text-white px-4 py-1 rounded-full text-sm font-bold shadow-[0_12px_26px_rgba(47,124,246,0.22)]">
                     RECOMMENDED
                   </span>
                 </div>
@@ -115,31 +115,31 @@ const Packages = () => {
 
               <div
                 className={`soft-card p-8 h-full flex flex-col ${
-                  pkg.highlight ? "border-2 border-[#4988c4]" : ""
+                  pkg.highlight ? "border-2 border-[#2F7CF6]" : ""
                 }`}
               >
-                <h3 className="text-2xl font-bold text-[#f7fbff] mb-2">
+                <h3 className="text-2xl font-extrabold text-[#080B10] mb-2">
                   {pkg.name}
                 </h3>
                 <div className="mb-4">
-                  <p className="text-3xl font-bold text-[#bde8f5]">{pkg.price}</p>
-                  <p className="text-sm text-[#d7edf4]">One-time payment</p>
+                  <p className="text-3xl font-extrabold text-[#2F7CF6]">{pkg.price}</p>
+                  <p className="text-sm text-[#90A4B2]">One-time payment</p>
                 </div>
 
-                <p className="text-[#d7edf4] mb-6 leading-relaxed">
+                <p className="text-[#6F7F8F] mb-6 leading-relaxed">
                   {pkg.description}
                 </p>
 
                 {/* Features List */}
                 <div className="mb-8 flex-grow">
-                  <p className="text-sm font-semibold text-[#f7fbff] mb-4 uppercase">
+                  <p className="text-sm font-bold text-[#080B10] mb-4 uppercase">
                     Fitur Included
                   </p>
                   <ul className="space-y-3">
                     {pkg.features.map((feature) => (
                       <li key={feature} className="flex items-start gap-3">
-                        <i className="fa-solid fa-check text-[#bde8f5] mt-1 text-sm flex-shrink-0"></i>
-                        <span className="text-[#f7fbff] text-sm">{feature}</span>
+                        <i className="fa-solid fa-check text-[#2F7CF6] mt-1 text-sm flex-shrink-0"></i>
+                        <span className="text-[#384359] text-sm">{feature}</span>
                       </li>
                     ))}
                   </ul>
@@ -152,8 +152,8 @@ const Packages = () => {
                   rel="noopener noreferrer"
                   className={`w-full py-3 px-4 rounded-lg font-semibold text-center transition-all duration-300 ${
                     pkg.highlight
-                      ? "bg-[#4988c4] text-[#0f2854] hover:bg-[#bde8f5] hover:shadow-lg hover:shadow-[#4988c4]/50"
-                      : "bg-[#1c4d8d] text-[#bde8f5] border border-[#4988c4]/30 hover:bg-[#4988c4] hover:text-[#0f2854] hover:border-[#4988c4]"
+                      ? "bg-[#2F7CF6] text-white hover:bg-[#2952CB] hover:shadow-lg hover:shadow-[#2F7CF6]/20"
+                      : "bg-[#F9FAFD] text-[#2952CB] border border-[#E7EDF5] hover:bg-[#EEF5FF] hover:border-[#CFE0F7]"
                   }`}
                 >
                   <i className="fa-brands fa-whatsapp mr-2"></i>
@@ -166,44 +166,44 @@ const Packages = () => {
 
         {/* FAQ / Additional Info */}
         <AnimatedSection animation="slide-in-bottom">
-          <div className="soft-card p-8 md:p-10 bg-[#1c4d8d]">
+          <div className="soft-card p-8 md:p-10">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
-                <h4 className="text-lg font-bold text-[#f7fbff] mb-3">
+                <h4 className="text-lg font-extrabold text-[#080B10] mb-3">
                   Apa yang sudah included?
                 </h4>
-                <ul className="space-y-2 text-[#d7edf4]">
+                <ul className="space-y-2 text-[#6F7F8F]">
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
+                    <i className="fa-solid fa-check text-[#2F7CF6]"></i>
                     Design & development lengkap
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
+                    <i className="fa-solid fa-check text-[#2F7CF6]"></i>
                     Domain & hosting 1 tahun
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
+                    <i className="fa-solid fa-check text-[#2F7CF6]"></i>
                     Mobile responsive
                   </li>
                   <li className="flex items-center gap-2">
-                    <i className="fa-solid fa-check text-[#bde8f5]"></i>
+                    <i className="fa-solid fa-check text-[#2F7CF6]"></i>
                     Basic SEO optimization
                   </li>
                 </ul>
               </div>
 
               <div>
-                <h4 className="text-lg font-bold text-[#f7fbff] mb-3">
+                <h4 className="text-lg font-extrabold text-[#080B10] mb-3">
                   Ada pertanyaan?
                 </h4>
-                <p className="text-[#d7edf4] mb-4">
+                <p className="text-[#6F7F8F] mb-4">
                   Setiap paket bisa dikustomisasi sesuai kebutuhan spesifik Anda. Hubungi kami untuk konsultasi lebih detail.
                 </p>
                 <a
                   href="https://wa.me/6285189339423?text=Halo%20Admin,%20saya%20ingin%20konsultasi%20tentang%20paket%20website%20ConsCode."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#bde8f5] text-[#0f2854] font-semibold rounded-lg hover:bg-[#d7edf4] transition-all"
+                  className="inline-flex items-center gap-2 px-5 py-2 bg-[#2F7CF6] text-white font-semibold rounded-full hover:bg-[#2952CB] transition-all"
                 >
                   <i className="fa-solid fa-comments"></i>
                   Chat Dengan Tim

@@ -1,92 +1,109 @@
+import { ArrowRight, Code2, Layers3, Sparkles } from "lucide-react";
 import AnimatedSection from "../components/AnimatedSection";
-import mobile from "../../public/mobile.png";
+import heroPreview from "../assets/images/porto1.jpeg";
+import avatar1 from "../assets/images/marquee/haqul.jpeg";
+import avatar2 from "../assets/images/marquee/syahril.png";
+import avatar3 from "../assets/images/marquee/iffo.jpg";
 
 const Hero = () => {
   return (
-    <section className="section-shell min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-24 -left-20 h-72 w-72 rounded-full bg-[#4988c4] blur-3xl"></div>
-        <div className="absolute -bottom-24 right-0 h-80 w-80 rounded-full bg-[#1c4d8d] blur-3xl"></div>
-      </div>
-
-      <div className="container mx-auto px-4 md:px-6 relative z-10 pt-24 pb-16">
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+    <section className="section-shell min-h-screen flex items-center">
+      <div className="container mx-auto max-w-7xl px-4 md:px-6 relative z-10 pt-32 pb-16 lg:pt-36">
+        <div className="grid lg:grid-cols-[0.94fr_1.06fr] gap-12 lg:gap-14 items-center">
           <AnimatedSection
             animation="slide-in-left"
-            className="space-y-6 stagger-child text-center md:text-left items-center md:items-start flex flex-col"
+            className="space-y-7 stagger-child text-center lg:text-left items-center lg:items-start flex flex-col"
             threshold={0.1}
           >
-            <span className="pill">Freelance Digital Partner</span>
+            <span className="pill">Solusi Website untuk Bisnis Modern</span>
 
-            <h1 className="text-4xl md:text-6xl font-bold leading-tight text-[#f7fbff]">
-              Website yang <span className="gradient-text">clean</span>,
-              modern, dan terasa natural.
+            <h1 className="max-w-2xl text-5xl md:text-6xl xl:text-[4rem] font-extrabold leading-[1.04] text-[#080B10]">
+              Website by Strategy.{" "}
+              <span className="block mt-3 gradient-text">Innovation by Design.</span>
             </h1>
 
-            <p className="text-lg text-[#d7edf4] max-w-xl">
-              ConsCode membantu bisnis dan personal brand tampil lebih percaya
-              diri lewat website yang rapi, cepat, dan fokus pada pengalaman
-              pengguna.
+            <p className="text-base md:text-lg text-[#6F7F8F] max-w-xl leading-relaxed">
+              ConsCode membangun website company profile, e-commerce, dan
+              aplikasi web yang rapi, cepat, serta siap membantu bisnis tumbuh
+              lebih percaya diri.
             </p>
 
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
               <a
                 href="https://wa.me/6285189339423?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20jasa%20pembuatan%20website%20ConsCode."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
-                Mulai Konsultasi
+                Mulai Project
+                <ArrowRight size={18} strokeWidth={2.5} />
               </a>
 
-              <a href="#portfolio" className="btn-outline">
-                Lihat Portofolio
+              <a href="#services" className="btn-outline">
+                Explore Layanan
               </a>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 w-full max-w-md pt-2">
-              {[
-                { value: "50+", label: "Project" },
-                { value: "100%", label: "Client Puas" },
-                { value: "24/7", label: "Support" },
-              ].map((item) => (
-                <div key={item.label} className="soft-card p-3 text-center">
-                  <p className="text-xl font-bold text-[#bde8f5]">{item.value}</p>
-                  <p className="text-xs text-[#bde8f5]">{item.label}</p>
-                </div>
-              ))}
+            <div className="flex items-center gap-3 pt-1">
+              <div className="flex -space-x-3">
+                {[avatar1, avatar2, avatar3].map((avatar) => (
+                  <img
+                    key={avatar}
+                    src={avatar}
+                    alt=""
+                    className="h-10 w-10 rounded-full border-2 border-white object-cover"
+                  />
+                ))}
+              </div>
+              <p className="text-sm font-medium text-[#6F7F8F]">
+                Dipercaya startup dan bisnis berkembang
+              </p>
             </div>
           </AnimatedSection>
 
           <AnimatedSection
             animation="slide-in-right"
-            className="relative hidden md:block"
+            className="relative lg:justify-self-end w-full"
             threshold={0.1}
           >
-            <div className="relative soft-card p-6 lg:p-8">
-              <div className="absolute -top-8 -right-8 h-28 w-28 rounded-2xl bg-[#4988c4] -z-10 rotate-12"></div>
-              <div className="absolute -bottom-8 -left-8 h-24 w-24 rounded-full bg-[#1c4d8d] -z-10"></div>
+            <div className="relative mx-auto w-full max-w-[38rem] lg:mx-0">
+              <div className="absolute -top-5 left-8 z-30 hidden sm:flex items-center gap-3 rounded-2xl border border-[#E7EDF5] bg-white px-4 py-3 shadow-[0_18px_42px_rgba(56,67,89,0.12)]">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-[#2F7CF6] text-white">
+                  <Layers3 size={22} />
+                </span>
+                <div>
+                  <p className="text-sm font-extrabold text-[#080B10]">
+                    UI/UX Systems
+                  </p>
+                  <p className="text-xs font-medium text-[#90A4B2]">
+                    Consistent & scalable
+                  </p>
+                </div>
+              </div>
+
+              <div className="absolute -bottom-6 right-3 z-30 hidden sm:flex flex-col items-center gap-3 rounded-2xl border border-[#E7EDF5] bg-white px-5 py-4 text-center shadow-[0_18px_42px_rgba(56,67,89,0.12)]">
+                <span className="grid h-11 w-11 place-items-center rounded-full bg-[#EEF5FF] text-[#2F7CF6]">
+                  <Code2 size={22} />
+                </span>
+                <p className="text-sm font-extrabold leading-tight text-[#080B10]">
+                  Dev-Ready
+                  <br />
+                  Delivery
+                </p>
+              </div>
+
+              <div className="absolute -right-4 top-1/3 z-30 hidden lg:grid h-14 w-14 place-items-center rounded-2xl border border-[#E7EDF5] bg-white text-[#2F7CF6] shadow-[0_18px_42px_rgba(56,67,89,0.12)]">
+                <Sparkles size={23} />
+              </div>
 
               <img
-                src={mobile}
-                alt="ConsCode Web Development"
+                src={heroPreview}
+                alt="Preview desain website ConsCode"
                 loading="eager"
                 decoding="async"
                 fetchPriority="high"
-                className="relative z-10 md:w-[18rem] lg:w-[28rem] mx-auto h-auto rounded-2xl"
+                className="relative z-10 aspect-[1.18/1] w-full rounded-[2rem] object-cover object-center shadow-[0_24px_64px_rgba(56,67,89,0.14)]"
               />
-
-              <div className="mt-6 grid grid-cols-3 gap-3">
-                {[
-                  "Design yang rapi",
-                  "Loading ringan",
-                  "SEO siap pakai",
-                ].map((text) => (
-                    <div key={text} className="rounded-xl border border-[#4988c4] bg-[#0b2145] p-3 text-xs text-[#f7fbff]">
-                    {text}
-                  </div>
-                ))}
-              </div>
             </div>
           </AnimatedSection>
         </div>

@@ -5,13 +5,13 @@ const TeamCard = ({ photo, name, role }) => {
         relative
         w-full
         max-w-[20rem]
-        h-[24rem]
-        sm:h-[26rem]
-        lg:h-[28rem]
+        h-[22rem]
+        sm:h-[24rem]
+        lg:h-[25rem]
         overflow-hidden
-        rounded-2xl
-        border border-[#4988c4]
-        shadow-sm
+        rounded-[1.6rem]
+        border border-[#E7EDF5]
+        shadow-[0_18px_42px_rgba(56,67,89,0.1)]
         group
       "
     >
@@ -31,7 +31,7 @@ const TeamCard = ({ photo, name, role }) => {
         "
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#0f2854]/80 via-[#0f2854]/25 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#080B10]/76 via-[#080B10]/18 to-transparent" />
 
       {/* Text Content */}
       <div className="absolute bottom-0 p-5 text-white">
